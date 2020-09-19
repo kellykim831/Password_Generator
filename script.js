@@ -32,13 +32,13 @@ function generatePassword() {
     if (confirmNum) {
       pwCriteria += num;
       console.log(pwCriteria);
-    }
+    
 
     var confirmLower = confirm("Click OK to confirm including lowercase characters");
     if (confirmLower) {
       pwCriteria += lower;
       console.log(pwCriteria);
-    }
+    
 
     var confirmUpper = confirm("Click OK to confirm including uppercase characters");
     if (confirmUpper) {
@@ -59,8 +59,6 @@ function generatePassword() {
     return generateNewpw;
   }
 }
-
-
 
   // Assignment Code
   var generateBtn = document.querySelector("#generate");
