@@ -42,7 +42,7 @@ function generatePassword() {
 
     var confirmUpper = confirm("Click OK to confirm including uppercase characters");
     if (confirmUpper) {
-      pwCriteria += lower;
+      pwCriteria += upper;
       console.log(pwCriteria);
     }
 
@@ -52,8 +52,8 @@ function generatePassword() {
       return false;
     }
     while (i < passwordLength) {
-      generatePassword += pwCriteria[Math.floor(Math.random() * pwCriteria.passwordLength)];
-      console.log(generatePassword);
+      generateNewpw += pwCriteria[Math.floor(Math.random() * pwCriteria.length)];
+      console.log(generateNewpw);
       i++;
     }
     return generateNewpw;
