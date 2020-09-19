@@ -8,10 +8,10 @@ var special = "!@#$%^&*()+,-./:;<=>?[\]^_'{|}~";
 // Prompt to generate how many characters for password
 function generatePassword() {
   var pwCriteria = "";
-  var generatepwd = "";
+  var generateNewpw = "";
   var i = 0;
   var passwordLength = prompt("How many characters would you like your password to contain?");
-console.log(passwordLength);
+  console.log(passwordLength);
   //Loop back if answer is not within these parameters
   if (passwordLength < 8) {
     alert("Password length must be at least 8 characters");
@@ -23,7 +23,7 @@ console.log(passwordLength);
     return false
   } else {
     var confirmSpecial = confirm("Click OK to confirm including special characters");
-    if (confirmSpecial){
+    if (confirmSpecial) {
       pwCriteria += special;
       console.log(pwCriteria);
     }
@@ -33,11 +33,11 @@ console.log(passwordLength);
       pwCriteria += num;
       console.log(pwCriteria);
     }
-    
+
     var confirmLower = confirm("Click OK to confirm including lowercase characters");
-   if(confirmLower) {
-     pwCriteria += lower;
-     console.log(pwCriteria);
+    if (confirmLower) {
+      pwCriteria += lower;
+      console.log(pwCriteria);
     }
 
     var confirmUpper = confirm("Click OK to confirm including uppercase characters");
@@ -46,19 +46,18 @@ console.log(passwordLength);
       console.log(pwCriteria);
     }
 
-  //Loop if none are confirmed
-  if (confirmSpecial != true && confirmNum != true && confirmLower != true && confirmUpper != true) {
-    alert("Must select at least one character type");
-    return false;
+    //Loop if none are confirmed
+    if (confirmSpecial != true && confirmNum != true && confirmLower != true && confirmUpper != true) {
+      alert("Must select at least one character type");
+      return false;
+    }
+    while (i < passwordLength) {
+      generatePassword += pwCriteria[Math.floor(Math.random() * pwCriteria.passwordLength)];
+      console.log(generatePassword);
+      i++;
+    }
+    return generateNewpw;
   }
-  while (i < passwordLength) {
-    generatePassword += pwCriteria[Math.floor(Math.random() * pwCriteria.passwordLength)];
-  }
-
-var  = "";
-for (var i = 0; i < passwordLength; i++){
-
-} 
 }
 
 
