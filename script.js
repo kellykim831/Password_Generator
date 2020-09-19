@@ -5,22 +5,29 @@ var upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N
 var special = ["!", "@", "#", "$", "%", "^", "&", "*", "/", "?", "+"];
 
 
-//Prompt to generate how many characters for password
+// Prompt to generate how many characters for password
 function generatePassword() {
   var passwordLength = prompt("How many characters would you like your password to contain?");
-
+console.log(passwordLength);
   //Loop back if answer is not within these parameters
   if (passwordLength < 8) {
     alert("Password length must be at least 8 characters");
+    console.log(passwordLength);
     return false
+
   } else if (passwordLength > 128) {
     alert("Password length must be less than 129 characters");
+    console.log(passwordLength);
     return false
   } else if (passwordLength >= 8 || passwordLength <= 128) {
     var confirmSpecial = confirm("Click OK to confirm including special characters");
+    console.log(confirmSpecial);
     var confirmNum = confirm("Click OK to confirm including numberic characters");
+    console.log(confirmNum);
     var confirmLower = confirm("Click OK to confirm including lowercase characters");
+    console.log(confirmLower);
     var confirmUpper = confirm("Click OK to confirm including uppercase characters");
+    console.log(confirmUpper);
   }
   //Loop if none are confirmed
   while (confirmSpecial != true && confirmNum != true && confirmLower != true && confirmUpper != true) {
@@ -29,7 +36,7 @@ function generatePassword() {
   }
 }
 
-// return characterTypes;
+
 
 
 // function generatePassword() {
@@ -63,7 +70,7 @@ function generatePassword() {
 //   var newPassword = [];
 
 //   for (let i = 0; i < options.length; ++i) {
-//     var numgenerator = Math.floor(Math.random() * Math.floor(passwordCharacters.length));
+//     var numgenerator = Math.floor(Math.random() * 10); 
 //     newPassword.push(passwordCharacters[numgenerator]);
 //   }
 
