@@ -6,11 +6,11 @@ The password generator was an activity where an application that generates a ran
 
 Pseudo coding was extremely helpful in creating a layout of what I wanted to accomplish from this password generator. I tried several different codes on how to generate a random password. Below is part of the code that took a lot of Googling and trial and error to finally get a function to generate a random password based on user-selected criteria.
 
-![Image](sn2.png)
+![Image](screenshot12.png)
 
 I never thought I would be so happy to see random characters/numbers generated. It was extremely satisfying to see the password generated below:
 
-![Image](sn11.png)
+![Image](screenshot13.png)
 
 ### Installing/Technology Used
 
