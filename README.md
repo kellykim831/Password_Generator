@@ -25,11 +25,11 @@ The following platforms were required to build this website:
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [Javascript](https://javascript.com)
+* [Javascript](https://developer.mozilla.org/en-US/doc/Web/CSS)
 
 ## Deployed Link
 
-* [See Live Site]()
+* [See Live Site](https://kellykim831.github.io/Password_Generator/)
 
 
 ## Authors
