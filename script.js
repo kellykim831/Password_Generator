@@ -1,4 +1,4 @@
-//Arrays for password generation
+//Setting the password options in string format. 
 var num = "0123456789";
 var lower = "abcdefghijklmnopqrstuvwxyz";
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -7,6 +7,7 @@ var special = "!@#$%^&*()+,-./:;<=>?[\]^_'{|}~";
 
 // Prompt to generate how many characters for password
 function generatePassword() {
+  //Create default values to clear old state. 
   var pwCriteria = "";
   var generateNewpw = "";
   var i = 0;
