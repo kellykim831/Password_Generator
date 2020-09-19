@@ -23,24 +23,29 @@ function generatePassword() {
     return false
   } else {
     var confirmSpecial = confirm("Click OK to confirm including special characters");
+    
+    //set the variable pwCriteria to the variable 
     if (confirmSpecial) {
       pwCriteria += special;
       console.log(pwCriteria);
     }
 
     var confirmNum = confirm("Click OK to confirm including numberic characters");
+    //set the variable pwCriteria to the variable 
     if (confirmNum) {
       pwCriteria += num;
       console.log(pwCriteria);
-    
+    }
 
     var confirmLower = confirm("Click OK to confirm including lowercase characters");
+    //set the variable pwCriteria to the variable 
     if (confirmLower) {
       pwCriteria += lower;
       console.log(pwCriteria);
-    
+    }
 
     var confirmUpper = confirm("Click OK to confirm including uppercase characters");
+    //set the variable pwCriteria to the variable 
     if (confirmUpper) {
       pwCriteria += upper;
       console.log(pwCriteria);
@@ -51,6 +56,7 @@ function generatePassword() {
       alert("Must select at least one character type");
       return false;
     }
+    //randomize pwCriteria string value
     while (i < passwordLength) {
       generateNewpw += pwCriteria[Math.floor(Math.random() * pwCriteria.length)];
       console.log(generateNewpw);
