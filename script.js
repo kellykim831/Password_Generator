@@ -23,13 +23,28 @@ console.log(passwordLength);
     return false
   } else {
     var confirmSpecial = confirm("Click OK to confirm including special characters");
-    console.log(confirmSpecial);
+    if (confirmSpecial){
+      pwCriteria += special;
+      console.log(pwCriteria);
+    }
+
     var confirmNum = confirm("Click OK to confirm including numberic characters");
-    console.log(confirmNum);
+    if (confirmNum) {
+      pwCriteria += num;
+      console.log(pwCriteria);
+    }
+    
     var confirmLower = confirm("Click OK to confirm including lowercase characters");
-    console.log(confirmLower);
+   if(confirmLower) {
+     pwCriteria += lower;
+     console.log(pwCriteria);
+    }
+
     var confirmUpper = confirm("Click OK to confirm including uppercase characters");
-    console.log(confirmUpper);
+    if (confirmUpper) {
+      pwCriteria += lower;
+      console.log(pwCriteria);
+    }
   }
   //Loop if none are confirmed
   while (confirmSpecial != true && confirmNum != true && confirmLower != true && confirmUpper != true) {
