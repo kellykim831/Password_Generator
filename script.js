@@ -45,11 +45,14 @@ console.log(passwordLength);
       pwCriteria += lower;
       console.log(pwCriteria);
     }
-  }
+
   //Loop if none are confirmed
-  while (confirmSpecial != true && confirmNum != true && confirmLower != true && confirmUpper != true) {
+  if (confirmSpecial != true && confirmNum != true && confirmLower != true && confirmUpper != true) {
     alert("Must select at least one character type");
     return false;
+  }
+  while (i < passwordLength) {
+    generatePassword += pwCriteria[Math.floor(Math.random() * pwCriteria.passwordLength)];
   }
 
 var  = "";
